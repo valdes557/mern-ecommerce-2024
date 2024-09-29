@@ -58,11 +58,11 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "men", label: "Men" },
-      { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
-      { id: "accessories", label: "Accessories" },
-      { id: "footwear", label: "Footwear" },
+      { id: "hommes", label: "hommes" },
+      { id: "femmes", label: "femmes" },
+      { id: "enfants", label: "enfants" },
+      { id: "accessoire", label: "Accessoire" },
+      { id: "chaussure", label: "chaussure" },
     ],
   },
   {
@@ -73,9 +73,10 @@ export const addProductFormElements = [
       { id: "nike", label: "Nike" },
       { id: "adidas", label: "Adidas" },
       { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
+      { id: "polo", label: "polo" },
       { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
+      { id: "dior", label: "Dior" },
+      { id: "rolex", label: "Rolex" },
     ],
   },
   {
@@ -113,28 +114,28 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "men",
-    label: "Men",
+    id: "hommes",
+    label: "Hommes",
     path: "/shop/listing",
   },
   {
-    id: "women",
-    label: "Women",
+    id: "femmes",
+    label: "Femmes",
     path: "/shop/listing",
   },
   {
-    id: "kids",
-    label: "Kids",
+    id: "enfants",
+    label: "Enfants",
     path: "/shop/listing",
   },
   {
-    id: "footwear",
-    label: "Footwear",
+    id: "chaussure",
+    label: "Chaussure",
     path: "/shop/listing",
   },
   {
-    id: "accessories",
-    label: "Accessories",
+    id: "accessoire",
+    label: "Accessoire",
     path: "/shop/listing",
   },
   {
@@ -145,37 +146,39 @@ export const shoppingViewHeaderMenuItems = [
 ];
 
 export const categoryOptionsMap = {
-  men: "Men",
-  women: "Women",
-  kids: "Kids",
-  accessories: "Accessories",
-  footwear: "Footwear",
+  hommes: "Hommes",
+  femmes: "Femmes",
+  enfants: "Enfants",
+  accessoire: "Accessoire",
+  chaussure: "Chaussure",
 };
 
 export const brandOptionsMap = {
   nike: "Nike",
   adidas: "Adidas",
   puma: "Puma",
-  levi: "Levi",
+  polo: "Polo",
   zara: "Zara",
-  "h&m": "H&M",
+  dior: "Dior",
+  rolex: "Rolex",
 };
 
 export const filterOptions = {
   category: [
-    { id: "men", label: "Men" },
-    { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
-    { id: "footwear", label: "Footwear" },
+    { id: "hommes", label: "Hommes" },
+    { id: "femmes", label: "Femmes" },
+    { id: "enfants", label: "Enfants" },
+    { id: "accessoire", label: "Accessoire" },
+    { id: "chaussure", label: "Chaussure" },
   ],
   brand: [
     { id: "nike", label: "Nike" },
     { id: "adidas", label: "Adidas" },
     { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
+    { id: "polo", label: "Polo" },
     { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
+    { id: "dior", label: "Dior" },
+    { id: "rolex", label: "Rolex" },
   ],
 };
 

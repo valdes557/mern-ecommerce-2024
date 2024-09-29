@@ -129,11 +129,11 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
                 productDetails?.salePrice > 0 ? "line-through" : ""
               }`}
             >
-              ${productDetails?.price}
+              {productDetails?.price} CFA
             </p>
             {productDetails?.salePrice > 0 ? (
               <p className="text-2xl font-bold text-muted-foreground">
-                ${productDetails?.salePrice}
+                {productDetails?.salePrice} CFA
               </p>
             ) : null}
           </div>
@@ -160,13 +160,13 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
                   )
                 }
               >
-                Add to Cart
+                Ajouter au panier
               </Button>
             )}
           </div>
           <Separator />
           <div className="max-h-[300px] overflow-auto">
-            <h2 className="text-xl font-bold mb-4">Reviews</h2>
+            <h2 className="text-xl font-bold mb-4">Avis</h2>
             <div className="grid gap-6">
               {reviews && reviews.length > 0 ? (
                 reviews.map((reviewItem) => (
@@ -190,11 +190,11 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
                   </div>
                 ))
               ) : (
-                <h1>No Reviews</h1>
+                <h1>aucun Avis</h1>
               )}
             </div>
             <div className="mt-10 flex-col flex gap-2">
-              <Label>Write a review</Label>
+              <Label>ecrire un avis</Label>
               <div className="flex gap-1">
                 <StarRatingComponent
                   rating={rating}
@@ -211,7 +211,7 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
                 onClick={handleAddReview}
                 disabled={reviewMsg.trim() === ""}
               >
-                Submit
+                Soumet
               </Button>
             </div>
           </div>
