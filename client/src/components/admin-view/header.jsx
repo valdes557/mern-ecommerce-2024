@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function AdminHeader({ setOpen }) {
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   function handleLogout() {
     //dispatch(logoutUser());
